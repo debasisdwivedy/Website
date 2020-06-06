@@ -212,8 +212,8 @@ button:focus {
   color: #fff;
 }
 
-.social-icon li .facebook:hover {
-  background: #3b5999;
+.social-icon li .github:hover {
+  background: #D6274D;
 }
 
 .social-icon li .twitter:hover {
@@ -228,8 +228,8 @@ button:focus {
   background: #1260A2;
 }
 
-.social-icon li .google:hover {
-  background: #CE332A;
+.social-icon li .icon-badge:hover {
+  background: none
 }
 
 /* ScrollToTop */

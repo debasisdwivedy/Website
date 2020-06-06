@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title>Profile</title>
 
     <!-- Bootstrap CSS -->
@@ -24,9 +24,23 @@
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>  
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+
   </head>
   <body>
-
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
       <!-- Navbar Start -->
@@ -69,11 +83,6 @@
                   Work
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">
-                  Contact
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -96,7 +105,7 @@
             <a href="#portfolio">Work</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#blogs">Blogs</a>
           </li>
         </ul>
         <!-- Mobile Menu End -->
@@ -115,7 +124,7 @@
                 <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Cloud and backend Developer</p>
                 <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
                   <li>
-                    <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+                    <a class="github" href="https://github.com/debasisdwivedy" target="_blank"><i class="icon-social-github"></i></a>
                   </li>
                   <li>
                     <a class="twitter" href="https://twitter.com/debasis_dwivedy" target="_blank"><i class="icon-social-twitter"></i></a>
@@ -127,7 +136,7 @@
                     <a class="linkedin" href="https://www.linkedin.com/in/debasis-dwivedy-8294274b/" target="_blank"><i class="icon-social-linkedin"></i></a>
                   </li>
                   <li>
-                    <a class="google" href="#"><i class="icon-social-google"></i></a>
+                    <a class="github" href="https://www.youracclaim.com/users/debasis-dwivedy/badges" target="_blank"><i class="icon-badge"></i></a>
                   </li>
                 </ul>
               </div>
@@ -156,15 +165,34 @@
               <div class="about-profile">
                 <ul class="admin-profile">
                   <li><span class="pro-title"> Name </span> <span class="pro-detail">Debasis Dwivedy</span></li>
-                  <li><span class="pro-title"> Experience </span> <span class="pro-detail">8 Years</span></li>
-                  <li><span class="pro-title"> Country </span> <span class="pro-detail">USA</span></li>
-                  <li><span class="pro-title"> Location </span> <span class="pro-detail">Dallas, TX</span></li>
-                  <li><span class="pro-title"> e-mail </span> <span class="pro-detail">dwivedy.debasis@gmail.com</span></li>
-                  <li><span class="pro-title"> Phone </span> <span class="pro-detail">+ (1) 812 391 4761</span></li>
+                  <li><span class="pro-title"> Hobbies </span> <span class="pro-detail">Road Trip,Exploring Places and Cuisines,Cooking</span></li>
+                  <li><span class="pro-title"> Citizen </span> <span class="pro-detail">India</span></li>
+                  <li><span class="pro-title"> Town </span> <span class="pro-detail">Angul, Odisha</span></li>
                 </ul>
               </div>
-              <a href="assets/docs/Debasis_Dwivedy_Resume.pdf" class="btn btn-common" target="_blank"><i class="icon-paper-clip"></i> View Resume</a>
-              <a href="#" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
+              <a id=get-resume class="btn btn-common"><i class="icon-paper-clip"></i>View Resume</a>
+              <a id=contact-me class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
+              
+                <div id = "contact"class="footer-right-contact" style="display: None;">
+                  <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-map-marker"></i>
+                    </div>
+                    <p>Dallas, TX</p>
+                  </div>
+                  <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <p><a href="mailto:dwivedy.debasis@gmail.com">dwivedy.debasis@gmail.com</a></p>
+                  </div>
+                  <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <p><a href="#">+ (1) 812 391 4761</a></p>
+                  </div>
+                </div>
             </div>
           </div>   
         </div>
@@ -174,7 +202,7 @@
 
     <!-- Services Section Start -->
     <section id="services" class="services section-padding">
-      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">What I do</h2>
+      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Learners Tale</h2>
       <div class="container">
         <div class="row">
           <!-- Services item -->
@@ -184,8 +212,12 @@
                 <i class="icon-grid"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">Front-end Development</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                <h3><a href="#">Back-end Development</a></h3>
+                <p>
+                  Developed front end applications with Python and Java for clients 
+                  cross domains to help then with their bussiness needs.Node,Typescript and Angular facinates
+                  and enables me to tie it all together and provide it as a package
+                </p>
               </div>
             </div>
           </div>
@@ -196,8 +228,12 @@
                 <i class="icon-layers"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">Graphic Design</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                <h3><a href="#">DevOps</a></h3>
+                <p>
+                  Hands free approach to manual mundane tasks.Cloud and on-premise deployments,
+                  configuarations,error-detection and correction. Building CI-CD pipeline has made my
+                  life easier and i plan to share it with whoever i can
+                </p>
               </div>
             </div>
           </div>
@@ -208,8 +244,12 @@
                 <i class="icon-briefcase"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">Business Branding</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                <h3><a href="#">Blog Writer</a></h3>
+                <p>
+                  My side project/hobby to get in touch with the human side of me.
+                  Learning by doing is what motivates me and writing about it provides
+                  me with a platform to share my believe/agenda/propaganda...the list goes on
+                </p>
               </div>
             </div>
           </div>
@@ -220,8 +260,12 @@
                 <i class="icon-bubbles"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">Consultancy</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                <h3><a href="#">Data Science</a></h3>
+                <p>
+                  Facinating at best and frustrating at worst.Had a brief interaction with AI and RPA at work.
+                  During academia got an opportunity to work on some Vision and NLP related projects.
+                  Click on the link to have a closer look at my work.
+                </p>
               </div>
             </div>
           </div>
@@ -245,21 +289,38 @@
                   <div class="content-text">
                     <h3 class="line-title">Masters In CSE - Indiana University Bloomington</h3>
                     <span>2015 - 2017</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                    <p class="line-text">
+                      Go Hoosiers!!!
+                    </p>
+                    <p class="line-text">
+                      Went back to school after 5 years of hiatus and couldn't be
+                      happier.Wish i could share all of my experience and adventures, but this is my resume and not my CV, some of it
+                      might exist in the link provided above
+                    </p>
                   </div>
                 </li>
                 <li>
                   <div class="content-text">
                     <h3 class="line-title">Bachelors In Technology - Biju Patnaik University Of Technology</h3>
                     <span>2006 - 2010</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                    <p class="line-text">
+                      Graduated with Electronics and Telecommunication degree. The only thing that i can remember about
+                      the time is the time i spent with my friends building robots(not the software one, real ones).
+                      Most of them failed but suprisingly some of them worked.Till this date i wonder "How???"
+                    </p>
                   </div>
                 </li>
                 <li>
                   <div class="content-text">
                     <h3 class="line-title">High School - Saint Lawrence School</h3>
                     <span>1995 - 2003</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                    <p class="line-text">
+                      Best days of my life.Daddy spending all his money, me having all the fun.Wish i could get
+                      those days back.
+                      </p>
+                      <p class="line-text">
+                      PS: Sadly i dont have a time machine yet
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -274,23 +335,38 @@
                 </li>
                 <li>
                   <div class="content-text">
-                    <h3 class="line-title">Associate - PwC</h3>
+                    <h3 class="line-title">Cyber Security Associate - PwC</h3>
                     <span>Jan 2018 - Present</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                    <p class="line-text">
+                      Designed and implemented a cloud first approach with PwC for their clients.
+                      Harnessed their existing infrastructure with Hybrid cloud approach and automated 
+                      their deployment process with devops on AWS and Azure using docker and kubernetes 
+                      for ForgeRock as the IAM product.
+                    </p>
                   </div>
                 </li>
                 <li>
                   <div class="content-text">
                     <h3 class="line-title">Software Developer - UST Global Inc</h3>
                     <span>Aug 2013 - Jan 2015</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                    <p class="line-text">
+                      Worked with them as an SME on enterprise content management using IBM FileNet
+                      Worked with the team procure government contracts by building a genric court case management
+                      system, to showcase the ability on ECM.
+                    </p>
                   </div>
                 </li>
                 <li>
                   <div class="content-text">
                     <h3 class="line-title">Systems Engineer - Tata Consultancy Services</h3>
                     <span>Dec 2010 - July 2013</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                    <p class="line-text">
+                      This is where it all started.Since not being from a computer science background
+                      this journey would have been impossible if i did not meet some of the most 
+                      amazing people that i could come across.Learned the basics of how to build a 
+                      production grade application.The catch phrase that comes to my mind "Always check for
+                      null values".
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -314,13 +390,13 @@
                 All 
               </a>
               <a class="filter btn btn-common" data-filter=".design">
-                Design 
+                Blogs 
               </a>
               <a class="filter btn btn-common" data-filter=".development">
                 Development
               </a>
               <a class="filter btn btn-common" data-filter=".print">
-                Print 
+                Hobbies 
               </a>
             </div>
             <!-- Portfolio Controller/Buttons Ends-->
@@ -437,49 +513,6 @@
     </section>
     <!-- Portfolio Section Ends --> 
 
-    <!-- Counter Area Start-->
-    <section class="counter-section section-padding">
-      <div class="container">
-        <div class="row">
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.3s">
-              <div class="icon"><i class="icon-briefcase"></i></div>
-              <div class="counterUp">250</div>
-              <p>Project Working</p>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon"><i class="icon-check"></i></div>
-              <div class="counterUp">950</div>
-              <p>Project Done</p>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.9s">
-              <div class="icon"><i class="icon-diamond"></i></div>
-              <div class="counterUp">150</div>
-              <p>Awards Received</p>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon"><i class="icon-heart"></i></div>
-              <div class="counterUp">299</div>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Counter Area End-->
-
-    <!-- Contact Section Start -->
-
     <!-- Footer Section Start -->
     <footer class="footer-area section-padding">
       <div class="container">
@@ -488,19 +521,19 @@
             <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
               <ul class="social-icon">
                 <li>
-                  <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+                  <a class="github" href="https://github.com/debasisdwivedy" target="_blank"><i class="icon-social-github"></i></a>
                 </li>
                 <li>
-                  <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+                  <a class="twitter" href="https://twitter.com/debasis_dwivedy" target="_blank"><i class="icon-social-twitter"></i></a>
                 </li>
                 <li>
-                  <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+                  <a class="instagram" href="https://www.instagram.com/debasisdwivedy/" target="_blank"><i class="icon-social-instagram"></i></a>
                 </li>
                 <li>
-                  <a class="instagram" href="#"><i class="icon-social-linkedin"></i></a>
+                  <a class="linkedin" href="https://www.linkedin.com/in/debasis-dwivedy-8294274b/" target="_blank"><i class="icon-social-linkedin"></i></a>
                 </li>
                 <li>
-                  <a class="instagram" href="#"><i class="icon-social-google"></i></a>
+                  <a class="github" href="https://www.youracclaim.com/users/debasis-dwivedy/badges" target="_blank"><i class="icon-badge"></i></a>
                 </li>
               </ul>
             </div>
@@ -514,20 +547,5 @@
     <a href="#" class="back-to-top">
     	<i class="icon-arrow-up"></i>
     </a>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.mixitup.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>  
-    <script src="assets/js/nivo-lightbox.js"></script>
-    <script src="assets/js/jquery.slicknav.js"></script>
-    <script src="assets/js/main.js"></script>
-      
   </body>
 </html>

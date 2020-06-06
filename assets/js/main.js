@@ -3,7 +3,6 @@
   "use strict";  
 
   $(window).on('load', function() {
-
     /* 
    MixitUp
    ========================================================================== */
@@ -87,8 +86,25 @@
         return false;
       });
 
+  }); 
+/* Resume Link active
+    ========================================================*/
+  $(document).on('click', '#get-resume', function() {
+    window.open("https://dwebstar.auth.us-east-2.amazoncognito.com/oauth2/authorize?identity_provider=Google&redirect_uri=https://auth.dwebstar.com/authenticate&response_type=CODE&client_id=i7gqd7llbe7f2t34540q4h72m&scope=email openid profile");
+  });
 
-
-  });      
+/* Contact Me Link
+    ========================================================*/
+    $(document).on('click', '#contact-me', function() {
+      if (document.getElementById('contact').style.display === 'none') 
+      { 
+        document.getElementById('contact').style.display = 'block'; 
+      } 
+      else 
+      { 
+        document.getElementById('contact').style.display = 'none'; 
+      }
+      
+    });
 
 }(jQuery));
