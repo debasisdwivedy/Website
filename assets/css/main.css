@@ -92,7 +92,7 @@ ul li, ol li {
 }
 
 .section-title-header p {
-  text: center;
+  text-align: center;
   font-weight: 400;
   line-height: 26px;
   padding-bottom: 36px;
@@ -241,7 +241,7 @@ a.back-to-top {
   text-decoration: none;
 }
 
-a.back-to-top i {
+a.back-to-top em {
   display: block;
   font-size: 22px;
   width: 40px;
@@ -301,7 +301,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   margin: 10px 10px 0px 0px;
 }
 
-.profile-wrapper .btn i {
+.profile-wrapper .btn em {
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -358,7 +358,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   margin-bottom: 30px;
 }
 
-.counter-section .counter .icon i {
+.counter-section .counter .icon em {
   font-size: 48px;
   color: #00b4d9;
 }
@@ -445,7 +445,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   border-color: #00b4d9 !important;
 }
 
-.timeline li:first-child i {
+.timeline li:first-child em {
   font-size: 20px;
   float: left;
   margin-left: -30px;
@@ -510,7 +510,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   background: transparent;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link i {
+.navbar-expand-lg .navbar-nav .nav-link em {
   font-size: 28px;
   color: #00b4d9;
   vertical-align: middle;
@@ -761,7 +761,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   margin-top: 40px;
 }
 
-#hero-area .banner_bottom_btn i {
+#hero-area .banner_bottom_btn em {
   color: #fff;
   font-size: 48px;
   -webkit-transition: all 0.2s linear;
@@ -855,7 +855,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   opacity: 0;
 }
 
-.overlay .icons i {
+.overlay .icons em {
   height: 42px;
   width: 42px;
   line-height: 42px;
@@ -920,7 +920,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
-.services-item .icon i {
+.services-item .icon em {
   font-size: 42px;
   margin-bottom: 15px;
   text-align: center;
