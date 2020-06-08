@@ -112,7 +112,6 @@ ul li, ol li {
 .btn {
   font-size: 14px;
   padding: 10px 30px;
-  border-radius: 0px;
   cursor: pointer;
   font-weight: 400;
   color: #fff;
@@ -476,7 +475,6 @@ a.back-to-top:hover, a.back-to-top:focus {
   animation-fill-mode: both;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  background: #fff !important;
 }
 
 .top-nav-collapse .navbar-brand {
