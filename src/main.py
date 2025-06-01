@@ -1,11 +1,13 @@
 from textnode import TextType, TextNode
 import os, shutil
 from utility_block import markdown_to_blocks, markdown_to_html_node
+import sys
 
 def main():
-    deep_copy("static","public",0)
+    basepath = sys.argv[1]
+    deep_copy("static","docs",0)
     #generate_page("content/index.md","template.html","public/index.html")
-    generate_pages("content","template.html","public")
+    generate_pages("content","template.html","docs",basepath)
 
 def deep_copy(src,dest,depth):
     if not os.path.isabs(src):
@@ -39,7 +41,7 @@ def extract_title(markdown):
             return line.replace("#","").strip()
     raise Exception("No Title")
 
-def generate_pages(from_path, template_path, dest_path):
+def generate_pages(from_path, template_path, dest_path,basepath):
     if os.path.isdir(from_path):
         if not os.path.exists(dest_path):
             os.mkdir(dest_path)
@@ -47,7 +49,7 @@ def generate_pages(from_path, template_path, dest_path):
         for file in files:
             if file.startswith("."):
                 continue
-            generate_pages(os.path.join(from_path,file),template_path,os.path.join(dest_path,file))
+            generate_pages(os.path.join(from_path,file),template_path,os.path.join(dest_path,file),basepath)
     
 
     if os.path.isfile(from_path):
@@ -65,6 +67,7 @@ def generate_pages(from_path, template_path, dest_path):
         title = extract_title(markdown_content)
         #html_content = html_content.format(Title=title,Content=html)
         html_content = html_content.replace("{{ Title }}",title).replace("{{ Content }}",html)
+        html_content.replace('href="/',f"href=\"{basepath}").replace('src="/',f"src=\"{basepath}")
         dest_folder_path = os.path.dirname(dest_path)
         if not os.path.exists(dest_folder_path):
             os.mkdir(dest_folder_path)
