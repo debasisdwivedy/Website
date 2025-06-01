@@ -67,7 +67,7 @@ def generate_pages(from_path, template_path, dest_path,basepath):
         title = extract_title(markdown_content)
         #html_content = html_content.format(Title=title,Content=html)
         html_content = html_content.replace("{{ Title }}",title).replace("{{ Content }}",html)
-        html_content.replace('href="/',f"href=\"{basepath}").replace('src="/',f"src=\"{basepath}")
+        html_content = html_content.replace('href="/',f"href=\"{basepath}").replace('src="/',f"src=\"{basepath}")
         dest_folder_path = os.path.dirname(dest_path)
         if not os.path.exists(dest_folder_path):
             os.mkdir(dest_folder_path)
